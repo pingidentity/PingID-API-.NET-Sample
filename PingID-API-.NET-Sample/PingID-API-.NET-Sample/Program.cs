@@ -51,7 +51,7 @@ namespace PingID_API_.NET_Sample
         {
             Dictionary<string, object> jwtHeader = new Dictionary<string, object>();
             jwtHeader.Add("alg", "HS256");
-            jwtHeader.Add("org_alias", org_alias);
+            jwtHeader.Add("orgAlias", org_alias);
             jwtHeader.Add("token", token);
 
             var headerSerialized = DictionaryToJsonString(jwtHeader);
